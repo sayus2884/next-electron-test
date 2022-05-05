@@ -37,9 +37,9 @@ Available commands:
 
 The project uses `next export` to generate static HTML. Refer to this [documentation](https://docs.netlify.com/integrations/frameworks/#next-js).
 
-Add **NETLIFY_NEXT_PLUGIN_SKIP** environment variable to **true**
-Set build command to **yarn build**
-Set publish directory to **renderer/out**
+- Add **NETLIFY_NEXT_PLUGIN_SKIP** environment variable to **true**.
+- Set build command to **yarn build**.
+- Set publish directory to **renderer/out**.
 
 
 ## Notes
