@@ -7,15 +7,15 @@ const IndexPage = () => {
     const handleMessage = (_event, args) => alert(args)
 
     // add a listener to 'message' channel
-    global.ipcRenderer.addListener('message', handleMessage)
+    global.ipcRenderer?.addListener('message', handleMessage)
 
     return () => {
-      global.ipcRenderer.removeListener('message', handleMessage)
+      global.ipcRenderer?.removeListener('message', handleMessage)
     }
   }, [])
 
   const onSayHiClick = () => {
-    global.ipcRenderer.send('message', 'hi from next')
+    global.ipcRenderer?.send('message', 'hi from next')
   }
 
   return (
